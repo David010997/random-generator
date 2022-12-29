@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div style="display: flex; justify-content: space-between">
+    <div class="sidebar">
+        <div class="container">
+            <div class="sidebar-main">
+                <h2>Random</h2>
+                <nav class="sidebar-nav">
+                    <ul class="sidebar-block">
+                        <li style="color: #33006F" class="sidebar-home-link active">Home</li>
+                        <li>Games</li>
+                        <li>Statistics</li>
+                        <li>Drawings</li>
+                        <li>Lists & More</li>
+                        <li>Web Tools</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-mobile">
+                <h2><i class="fa-solid fa-bars" style="font-size: 24px"></i></h2>
+                <nav class="sidebar-nav">
+                    <ul class="sidebar-block">
+                        <li><i class="fa fa-home active" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-gamepad" aria-hidden="true"></i>
+                        </li>
+                        <li><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-draw-polygon"></i>
+                        </li>
+                        <li><i class="fa fa-list" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </li>
+                        <li><i class="fa fa-quote-left" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div style="width: 85%">
+        <header class="header">
+            <div class="header-main">
+                <div class="container">
+                    <ul class="header-block">
+                        <li><i class="fa fa-random" style="font-size: 28px" aria-hidden="true"></i>
+                        </li>
+                        <ul style="display: flex">
+                            <li style="margin-right: 25px">Search</li>
+                            <li>Sign In</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+
+            <div class="container">
+                <h2 class="main-title">Random Number Generator <i class="fa fa-random logo-icon" style="font-size: 26px; text-align: center; margin-top: 40px; color: #8458B3" aria-hidden="true"></i></h2>
+
+                <div class="random-block" id="random">
+                    <header class="random-header">
+                        True random number generator
+                    </header>
+                    <div class="container">
+                        <div class="random-main">
+                            <div class="min-num">
+                                <span>min:</span>
+                                <input value="1" type="number" id="min">
+                            </div>
+                            <div class="max-num">
+                                <span>max:</span>
+                                <input value="10000" type="number" id="max">
+                            </div>
+                            <div class="btn-div">
+                                <button id="generate" type="button" onclick="run()">start</button>
+                                <button id="stop" type="button" onclick="stop()">stop</button>
+                            </div>
+                            <div class="random-result">
+                                <span>Result:</span>
+                                <div class="line" id="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <blockquote style="padding-top: 20px">
+                    <p>Perhaps you have wondered how predictable machines like computers can generate randomness. In reality, most random numbers used in computer programs are pseudo-random, which means they are generated in a predictable fashion using a mathematical formula. This is fine for many purposes, but it may not be random in the way you expect if you're used to dice rolls and lottery drawings.
+
+                        <br> our site offers true random numbers to anyone on the Internet. The randomness comes from atmospheric noise, which for many purposes is better than the pseudo-random number algorithms typically used in computer programs. People use
+                        <br> our site for holding drawings, lotteries and sweepstakes, to drive online games, for scientific applications and for art and music. The service has existed since 1998 and was built by Dr Mads Haahr of the School of Computer Science and Statistics at Trinity College, Dublin in Ireland. Today,
+                        <br> our site is operated by Randomness and Integrity Services Ltd.</p>
+                </blockquote>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
