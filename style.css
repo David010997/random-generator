@@ -17,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    
 }
 
 .header-block li {
@@ -31,6 +32,8 @@
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .sidebar {
@@ -71,6 +74,7 @@
     padding-bottom: 60px;
     border: 1px solid #d0bdf4;
     margin-top: 25px;
+    border-radius: 8px;
 }
 
 .sidebar-block li:after {
@@ -94,6 +98,8 @@
 
 .min-num input, .max-num input {
     padding: 6px;
+    border-radius: 6px;
+    border: 1px solid black;
 }
 
 .btn-div {
@@ -104,20 +110,22 @@
 }
 
 .btn-div button {
-    padding: 4px 40px;
+    padding: 6px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #d0bdf4;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+
 }
 
 .btn-div button:focus {
     border: none !important;
     outline: none !important;
 }
-
 
 .random-result span {
     margin-left: 10px;
@@ -140,6 +148,8 @@
     align-items: center;
     font-size: 28px;
     padding: 10px 0;
+    border-radius: 8px;
+    margin-top: 8px;
 }
 
 .date {
