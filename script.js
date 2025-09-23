@@ -20,7 +20,7 @@ function run() {
 function stop() {
     clearInterval(interval);
     if (interval) {
-        document.getElementById("line").innerHTML = `<div class="final-result"><span class="result-num">720</span><span class="date">${moment().format('ddd MMM DD YYYY HH:mm:ss')}</span></div>`;
+        document.getElementById("line").innerHTML = `<div class="final-result"><span class="result-num">4543</span><span class="date">${moment().format('ddd MMM DD YYYY HH:mm:ss')}</span></div>`;
     }
     interval = false;
 }
